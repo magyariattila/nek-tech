@@ -7,3 +7,9 @@ h1{
   font-size: 70pt;
   font-family: Alex Brush;
 }
+
+img {
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+}

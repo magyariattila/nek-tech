@@ -1,4 +1,8 @@
 body{
+  margin: 0;
+}
+
+.logo_name_main_header{
   background-color: #89c9b8;
 }
 
@@ -9,7 +13,7 @@ h1{
 }
 
 img {
-  height: 80%;
-  width: 80%;
+  height: 70%;
+  width: 70%;
   border-radius: 50%;
 }

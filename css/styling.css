@@ -18,7 +18,6 @@ body{
 .header-text{
   color: #092532;
   font-size: 25pt;
-  /*font-family: Alex Brush;*/
   font-family: Audiowide;
   font-weight: bold;
   display: inline-block;
@@ -31,12 +30,13 @@ body{
 .navbar {
   overflow: hidden;
   display: inline-block;
+  font-family: Audiowide;
 }
 
 .navbar a {
   float: left;
   font-size: 20px;
-  color: white;
+  color: #f0f8f8;
   text-align: center;
   padding: 14px 50px;
   text-decoration: none;
@@ -51,7 +51,7 @@ body{
   font-size: 20px;
   border: none;
   outline: none;
-  color: white;
+  color: #f0f8f8;
   padding: 14px 50px;
   background-color: inherit;
   font-family: inherit;
@@ -93,17 +93,140 @@ body{
   display: block;
 }
 
-.wifi-logo{
-  margin: 200px 50px 0 130px;
+.logo-wifi{
+  display: inline-block;
   border-radius: 200px;
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  margin: 180px 50px 0 130px;
+  perspective: 1000px;
 }
 
-.cam-logo{
-  margin: 200px 50px 0 50px;
+.logo-cam{
+  display: inline-block;
   border-radius: 200px;
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  margin: 180px 50px 0 50px;
+  perspective: 1000px;
 }
 
-.sec-logo{
-  margin: 200px 50px 0 50px;
+.logo-sec{
+  display: inline-block;
   border-radius: 200px;
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  margin: 180px 50px 0 50px;
+  perspective: 1000px;
+}
+
+.logo-inner-wifi {
+  position: relative;
+  border-radius: 200px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.logo-inner-cam {
+  position: relative;
+  border-radius: 200px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.logo-inner-sec {
+  position: relative;
+  border-radius: 200px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.logo-wifi:hover .logo-inner-wifi {
+  transform: rotateY(180deg);
+}
+
+.logo-cam:hover .logo-inner-cam {
+  transform: rotateY(180deg);
+}
+
+.logo-sec:hover .logo-inner-sec {
+  transform: rotateY(180deg);
+}
+
+.logo-front-wifi, .logo-back-wifi {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-front-cam, .logo-back-cam{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-front-sec, .logo-back-sec {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.logo-back-wifi {
+  border-radius: 200px;
+  background-color: #89c9b8;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.logo-back-cam {
+  border-radius: 200px;
+  background-color: #89c9b8;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.logo-back-sec {
+  border-radius: 200px;
+  background-color: #89c9b8;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.wifi-img{
+  border-radius: 200px;
+  width: 350px;
+  height: 350px;
+}
+
+.cam-img{
+  border-radius: 200px;
+  width: 350px;
+  height: 350px;
+}
+
+.sec-img{
+  border-radius: 200px;
+  width: 350px;
+  height: 350px;
 }
